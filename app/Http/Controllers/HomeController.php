@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Auth;
+
 class HomeController extends Controller
 {
     public function home() {
@@ -9,7 +11,11 @@ class HomeController extends Controller
     }
 
     public function index() {
-        return view('admin/index');
+        if (Auth::user()->id_role == 1){
+            return view('admin/index');
+        } else {
+            return abort(403);
+        }
     }
 
     public function indexUser() {

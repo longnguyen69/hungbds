@@ -1,4 +1,4 @@
 @extends('case/indexUser')
 @section('content')
-    index page HungDz
+    demo report
 @endsection

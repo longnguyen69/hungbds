@@ -27,4 +27,10 @@ class LoginController extends Controller
             return back()->with('msg','incorrect username or password');
         }
     }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('login');
+    }
 }
