@@ -67,7 +67,7 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">Custom User:</h6>
                     <a class="collapse-item" href="{{ route('admin.create') }}">Create New User</a>
-                    <a class="collapse-item" href="cards.html">List User</a>
+                    <a class="collapse-item" href="{{ route('admin.listUser') }}">List User</a>
                 </div>
             </div>
         </li>
@@ -84,8 +84,8 @@
                 <div class="bg-white py-2 collapse-inner rounded">
                     <h6 class="collapse-header">List Service:</h6>
                     <a class="collapse-item" href="{{ route('admin.listProject') }}">Project</a>
-                    <a class="collapse-item" href="utilities-border.html">Towns</a>
-                    <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                    <a class="collapse-item" href="{{ route('admin.buildingIndex') }}">Building</a>
+                    <a class="collapse-item" href="{{ route('admin.productList') }}">Products</a>
                     <a class="collapse-item" href="utilities-other.html">Other</a>
                 </div>
             </div>

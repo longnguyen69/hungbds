@@ -6,16 +6,12 @@
         <!-- Page Heading -->
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">Project</h1>
-{{--            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i--}}
-{{--                    class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>--}}
-            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+            {{--            <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i--}}
+            {{--                    class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>--}}
+            <a href="{{ route('admin.createProject') }}"
+               class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
                     class="icon-plus-sign"></i> Create Project</a>
         </div>
-
-        <!-- Content Row -->
-{{--        <div class="row">--}}
-{{--            @yield('content')--}}
-{{--        </div>--}}
     </div>
     <!-- /.container-fluid -->
     <table class="table table-success table-striped">
@@ -29,7 +25,7 @@
         </tr>
         </thead>
         <tbody>
-        @forelse($project as $key->value)
+        @forelse($project as $key=>$value)
             <tr>
                 <th scope="row">{{ ++$key }}</th>
                 <td>{{ $value->code }}</td>
@@ -41,7 +37,7 @@
             </tr>
 
         @empty
-                <h5>Bạn chưa tạo danh sách</h5>
+            <h5>Bạn chưa tạo danh sách</h5>
         @endforelse
         </tbody>
     </table>

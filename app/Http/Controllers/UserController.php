@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Role;
+use App\Models\User;
 use App\Models\Users;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -20,6 +21,13 @@ class UserController extends Controller
         }
 
     }
+
+    public function list()
+    {
+        $list = User::all();
+        return view('admin/listUser',compact('list'));
+    }
+
     public function save(Request $request)
     {
         $user1 = Users::where('username',$request->username)->first();
