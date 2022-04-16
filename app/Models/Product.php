@@ -7,6 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use HasFactory;
+//    use HasFactory;
     protected $table = 'products';
+
+    public function building()
+    {
+        return $this->belongsTo(Building::class);
+    }
 }
