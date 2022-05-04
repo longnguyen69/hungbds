@@ -86,7 +86,7 @@
                     <a class="collapse-item" href="{{ route('admin.listProject') }}">Project</a>
                     <a class="collapse-item" href="{{ route('admin.buildingIndex') }}">Building</a>
                     <a class="collapse-item" href="{{ route('admin.productList') }}">Products</a>
-                    <a class="collapse-item" href="utilities-other.html">Other</a>
+                    <a class="collapse-item" href="{{ route('admin.customer.create') }}">Customer</a>
                 </div>
             </div>
         </li>

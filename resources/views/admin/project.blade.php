@@ -32,7 +32,7 @@
                 <td>{{ $value->name }}</td>
                 <td>{{ $value->created_at }}</td>
                 <td>
-                    <a href="#">Edit</a>
+                    <a href="{{ route('admin.editProject',['id'=>$value->id]) }}">Edit</a>
                 </td>
             </tr>
 
