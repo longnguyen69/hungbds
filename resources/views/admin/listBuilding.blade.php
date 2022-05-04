@@ -35,7 +35,7 @@
                         <td>{{ $value->id_duan }}</td>
                         <td>{{ $value->created_at }}</td>
                         <td>
-                            <a href="#">Edit</a>
+                            <a href="{{ route('admin.buildingEdit',['id'=>$value->id]) }}">Edit</a>
                         </td>
                     </tr>
 

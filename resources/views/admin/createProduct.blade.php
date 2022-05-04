@@ -58,6 +58,14 @@
                     <input type="text" name="diachi" class="form-control" placeholder="dia chi">
                 </div>
                 <div class="form-group">
+                    <label for="exampleFormControlInput1">Tên chủ nhà</label>
+                    <input type="text" name="name_chunha" class="form-control" placeholder="Tên chủ nhà">
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Số điện thoại chủ nhà</label>
+                    <input type="text" name="phone_chunha" class="form-control" placeholder="điện thoại chủ nhà">
+                </div>
+                <div class="form-group">
                     <label for="exampleFormControlSelect1">Project</label>
                     <select class="form-control" name="toa">
                         @foreach($project as $key=>$value)
@@ -72,7 +80,7 @@
                         <option value="nhadat">nha dat</option>
                     </select>
                 </div>
-                <button type="submit" class="btn btn-primary">Create Building</button>
+                <button type="submit" class="btn btn-primary">Create Product</button>
             </form>
         </div>
     </div>
